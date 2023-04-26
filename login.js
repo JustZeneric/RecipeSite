@@ -17,14 +17,27 @@ function login(event) {
   if (user) {
     // Store the username in localStorage
     localStorage.setItem("username", username);
-
+  
     // Redirect to the home page
-    window.location.href = "index.html";
+    window.location.replace("index.html");
   } else {
     alert("Invalid username or password.");
   }
+  
 }
 
+// Show password function
+function showPassword() {
+  const passwordInput = document.getElementById("password");
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+  } else {
+    passwordInput.type = "password";
+  }
+}
 
 // Add event listener to the login form
 document.getElementById("login-form").addEventListener("submit", login);
+
+// Add event listener to the show password checkbox
+document.getElementById("show-password").addEventListener("change", showPassword);

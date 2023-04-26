@@ -8,10 +8,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(./assets/pexels-julia-filirovska-7140335.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #5F9B43;
 }
 .header {
     font-family: 'Roboto', sans-serif;
@@ -41,7 +38,7 @@ section {
     width: 70%;
  padding-right: 30px;
  padding-left: 30px;
-    border: 1px solid black;
+
     border-radius: 10px;
     height: 52vh;
     background-color: #ffffff;
@@ -56,6 +53,9 @@ section {
   gap: 30px;
 
 
+}
+.login-Head a {
+    text-decoration: none;
 }
 form {
     display: flex;
@@ -80,6 +80,7 @@ input {
     height: 30px;
     border: 1px solid black;
     border-radius: 3px;
+   padding-left: 10px;
 }
 .sign {
     text-decoration: none;
@@ -96,13 +97,39 @@ input {
     flex-direction: row;
     justify-content: center;
 }
+
 .reset {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
+    color: rgb(0, 160, 147);
+}
+.reset:hover {
+    color: black;
 }
 .login-Links {
- 
+ padding-top: 15px;
     display: flex;
     gap: 15px;
+}
+.show-password {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+    width: 100%;
+  }
+  .show-password input {
+    width: 25px;
+    height: 25px;
+
+  }
+.register a {
+text-decoration: none;
+padding-left: 5px;
+color:rgb(0, 160, 147);
+}
+.register a:hover {
+    color: black;
 }

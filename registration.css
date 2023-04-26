@@ -62,10 +62,7 @@ section {
 height: 100%;
 background-color: #5F9B43;
 font-family: 'Roboto', sans-serif;
-background-image: url(./assests/pexels-nadine-wuchenauer-1563636.jpg);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+
   
 
   
@@ -117,6 +114,7 @@ input {
     margin-bottom: 30px;
     width: 100%;
     height: 30px;
+    padding-left: 10px;
     border-radius: 5px;
     border: 2px solid black;
 }
