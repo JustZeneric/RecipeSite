@@ -17,54 +17,54 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
-    <script src="login.js"></script>
+    
 </head>
 
-<body>
+<body id="home-page">
 
     <nav class="p-3 ps-0 pe-0">
-        <div class="container-fluid">
-            <div class="container d-flex align-items-center justify-content-between">
-                <div class="container p-0">
-                    <h1 class="m-0 text-uppercase nav-title">P<span>P</span></h1>
-                </div>
-                <div class="container d-flex justify-content-end align-items-center p-0">
-                    <a href="#" class="d-md-none">
-                        <i class="fa-solid fa-bars fs-1 burger-menu"></i>
-                    </a>
-                    
-                    <ul class="d-flex list-unstyled align-items-center justify-content-center m-0 d-none d-md-flex nav-list">
-                        <li class="d-flex align-items-center justify-content-center">
-                            <a href="#" target="_blank" class="text-decoration-none text-uppercase">About</a>
-                        </li>
-                        <li class="d-flex align-items-center justify-content-center">
-                            <a href="#" target="_blank" class="text-decoration-none ms-3 text-uppercase">Recipes</a>
-                        </li>
-                        <li class="d-flex align-items-center justify-content-center" id="login-link">
-                            <a href="login.html" target="_blank" class="text-decoration-none ms-3 text-uppercase btn btn-light btn-login" id="login-btn">Login</a>
-                        </li>
-                        <div id="username-display"></div>
-                    </ul>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="container p-0">
+            <h1 class="m-0 text-uppercase nav-title">P<span>P</span></h1>
+          </div>
+          <div class="container d-flex justify-content-end align-items-center p-0">
+            <a href="#" class="d-md-none">
+              <i class="fa-solid fa-bars fs-1 burger-menu"></i>
+            </a>
+  
+            <ul class="d-flex list-unstyled align-items-center justify-content-center m-0 d-none d-md-flex nav-list">
+              <li class="d-flex align-items-center justify-content-center">
+                <a href="#" target="_blank" class="text-decoration-none text-uppercase">About</a>
+              </li>
+              <li class="d-flex align-items-center justify-content-center">
+                <a href="#" target="_blank" class="text-decoration-none ms-3 text-uppercase">Recipes</a>
+              </li>
+              <li class="d-flex align-items-center justify-content-center" id="username-li">
+                <a href="#" target="_blank" class="text-decoration-none ms-3 text-uppercase btn btn-light btn-login" id="login-btn">Login</a>
+                <a href="#" target="_blank" class="text-decoration-none ms-3 text-uppercase btn btn-light btn-logout" id="logout-btn" style="display: none;">Logout</a>
+                <span id="username" class="ms-3" style="display: none;"></span>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
-
+  
     <section id="hero-section">
-        <div class="container-fluid p-5 m-0">
-            <div class="container p-0 d-flex flex-column align-items-center justify-content-center">
-                <div class="container p-0 text-center">
-                    <h1 class="text-uppercase hero-title">Pantry<span>Pal</span></h1>
-                </div>
-                <div class="container p-0 text-center">
-                    <p class="hero-text">Lorem ipsum <span>dolor sit</span> amet, consectetur adipiscing elit. Praesent sed justo et nunc malesuada bibendum. <span>Aenean mollis</span> lacinia euismod. Nulla et ex odio.</p>
-                </div>
-            </div>
-            
+      <div class="container-fluid p-5 m-0">
+        <div class="container p-0 d-flex flex-column align-items-center justify-content-center">
+          <div class="container p-0 text-center">
+            <h1 class="text-uppercase hero-title">Pantry<span>Pal</span></h1>
+          </div>
+          <div class="container p-0 text-center">
+            <p class="hero-text">Lorem ipsum <span>dolor sit</span> amet, consectetur adipiscing elit. Praesent sed justo et nunc malesuada bibendum. <span>Aenean mollis</span> lacinia euismod. Nulla et ex odio.</p>
+          </div>
         </div>
-        
+  
+      </div>
+  
     </section>
-    
 
     <script src="script.js"></script>
 </body>

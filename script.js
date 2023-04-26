@@ -1,55 +1,61 @@
-const loginForm = document.getElementById('login-form');
+// Get the login button and username list item
+const loginBtn = document.getElementById('login-btn');
+const usernameLi = document.getElementById('username-li');
 
-loginForm.addEventListener('submit', (event) => {
-  // Prevent the form from submitting normally
-  event.preventDefault();
+// Check if the user is logged in by looking for a saved username in local storage
+const savedUsername = localStorage.getItem('username');
+if (savedUsername) {
+  // Display the username and hide the login button
+  loginBtn.style.display = 'none';
+  const dropdownMenu = document.createElement('div');
+  dropdownMenu.className = 'dropdown';
+  const usernameLink = document.createElement('a');
+  usernameLink.href = '#';
+  usernameLink.className = 'dropdown-toggle text-decoration-none ms-3 text-uppercase';
+  usernameLink.setAttribute('data-bs-toggle', 'dropdown');
+  usernameLink.textContent = savedUsername;
+  dropdownMenu.appendChild(usernameLink);
+  const dropdownMenuList = document.createElement('ul');
+  dropdownMenuList.className = 'dropdown-menu';
+  dropdownMenuList.setAttribute('aria-labelledby', 'dropdownMenuLink');
+  const accountLink = document.createElement('a');
+  accountLink.href = 'account.html';
+  accountLink.className = 'dropdown-item';
+  accountLink.textContent = 'Account';
+  dropdownMenuList.appendChild(accountLink);
+  const recipesLink = document.createElement('a');
+  recipesLink.href = 'recipes.html';
+  recipesLink.className = 'dropdown-item';
+  recipesLink.textContent = 'Recipes';
+  dropdownMenuList.appendChild(recipesLink);
+  const logoutLink = document.createElement('a');
+  logoutLink.href = '#';
+  logoutLink.className = 'dropdown-item';
+  logoutLink.textContent = 'Logout';
+  logoutLink.addEventListener('click', logout);
+  dropdownMenuList.appendChild(logoutLink);
+  dropdownMenu.appendChild(dropdownMenuList);
+  usernameLi.appendChild(dropdownMenu);
+} 
+else {
+  // Display the login button and hide the username
+  loginBtn.style.display = 'block';
+  const logoutBtn = document.getElementById('logout-btn');
+  logoutBtn.style.display = 'none';
+  const usernameSpan = document.getElementById('username');
+  usernameSpan.style.display = 'none';
+}
 
-  // Get the form data
-  const formData = new FormData(loginForm);
-  const username = formData.get('username');
-  const email = formData.get('email');
-  const password = formData.get('password');
-
-  // Make an AJAX request to submit the form data
-  const loginData = {
-    username: username,
-    email: email,
-    password: password
-  };
-  
-  fetch('/login', {
-    method: 'POST',
-    body: JSON.stringify(loginData),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then((response) => {
-    // Handle the response from the server
-    if (response.ok) {
-      // Redirect to the homepage
-      window.location.href = '/';
-      // Set the user status as logged in
-      localStorage.setItem('isLoggedIn', true);
-    } else {
-      // Handle any errors
-      alert('Login failed!');
-    }
-  })
-  .catch((error) => {
-    console.error('Error submitting login form', error);
-  });
+// Add a click event listener to the login button
+loginBtn.addEventListener('click', () => {
+  // Redirect to the login page
+  window.location.href = 'login.html';
 });
 
-// For testing purposes, we'll set up two sets of login credentials
-const validCredentials = [
-  { username: 'user1', email: 'user1@example.com', password: 'password1' },
-  { username: 'user2', email: 'user2@example.com', password: 'password2' },
-];
-
-// Check if the submitted login credentials are valid
-function validateCredentials(username, email, password) {
-  return validCredentials.some((credentials) => {
-    return credentials.username === username && credentials.email === email && credentials.password === password;
-  });
+// Add a function to handle logging out
+function logout() {
+  // Remove the saved username from local storage
+  localStorage.removeItem('username');
+  // Redirect to the home page to show the login button again
+  window.location.href = 'index.html';
 }
