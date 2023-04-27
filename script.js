@@ -1,11 +1,13 @@
 // Get the login button and username list item
-const loginBtn = document.getElementById('login-btn');
-const usernameLi = document.getElementById('username-li');
+const loginBtn = document.querySelector('.btn-login');
+
+const usernameLi = document.getElementById('username-display');
 
 // Check if the user is logged in by looking for a saved username in local storage
 const savedUsername = localStorage.getItem('username');
 if (savedUsername) {
   // Display the username and hide the login button
+  
   loginBtn.style.display = 'none';
   const dropdownMenu = document.createElement('div');
   dropdownMenu.className = 'dropdown';
@@ -36,6 +38,12 @@ if (savedUsername) {
   dropdownMenuList.appendChild(logoutLink);
   dropdownMenu.appendChild(dropdownMenuList);
   usernameLi.appendChild(dropdownMenu);
+  usernameLink.style.color = 'black'
+usernameLink.style.padding = "10px";
+usernameLink.style.backgroundColor = '#5F9B43';
+usernameLink.style.borderRadius = '10px';
+usernameLink.style.fontFamily = 'Roboto', sans-serif;
+usernameLink.style.fontWeight = "bold";
 } 
 else {
   // Display the login button and hide the username

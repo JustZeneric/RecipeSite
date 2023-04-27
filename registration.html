@@ -36,12 +36,14 @@
                 </div>
                 <form>
 
-                    <label for="username">Username: </label>
-                    <input type="username" id="username" name="username">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <form method="post" action="/register">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    
                     <a class="create" href="#"><i class="fa-solid fa-lock"></i>Create Account</a>
                     <div class="login-Info">
 
@@ -54,6 +56,7 @@
         </div>
         </div>
     </section>
+    <script src="registration.js"></script>
 </body>
 
 </html>

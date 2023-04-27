@@ -14,8 +14,14 @@
 
 html {
     height: 100%;
+
+}
+
+body {
     background-color: var(--color-white);
 }
+
+
 
 h1,
 h2,
@@ -25,23 +31,13 @@ h5 {
     font-family: var(--font-primary);
 }
 
-nav {
-    background-color: var(--color-primary);
-}
-
-section {
-    background-color: var(--color-white);
-}
-
+/* ==== Navbar ==== */
 
 .burger-menu {
     color: var(--color-white);
 }
 
-#hero-section {
-    background-color: var(--color-primary);
-    padding: 5rem 0;
-}
+
 
 .nav-title {
     color: var(--color-white);
@@ -51,8 +47,21 @@ section {
     color: var(--color-black);
 }
 
+/* ==== Hero Section ==== */
 
+.header-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -100%;
+    z-index: -1;
+    
+}
 
+.header-image {
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
 
 .hero-title {
     color: var(--color-white);
@@ -68,4 +77,23 @@ section {
 
 .hero-text span {
     color: var(--color-white);
+}
+
+/* ==== CARDS SECTION ==== */
+
+.card-container {
+    background-color: var(--color-primary);
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+}
+
+.card-icon {
+    font-size: 5rem;
+}
+
+/* ==== Footer ==== */
+
+.footer-container {
+    background-color: var(--color-primary);
 }
