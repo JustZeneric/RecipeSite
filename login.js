@@ -1,74 +1,47 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const app = express();
+// User database
+const users = [
+  { username: "user1", password: "password1" },
+  { username: "user2", password: "password2" }
+];
 
-app.use(bodyParser.urlencoded({ extended: true }));
+// Login function
+function login(event) {
+  event.preventDefault(); // Prevent the form from submitting
 
-app.post('/login', (req, res) => {
-  const username = req.body.username;
-  const email = req.body.email;
-  const password = req.body.password;
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
-  // Check if the submitted login credentials are valid
-  if (validateCredentials(username, email, password)) {
-    // Set the user status as logged in
-    req.session.isLoggedIn = true;
-    // Redirect to the homepage
-    res.redirect('index.html');
+  // Check if the username and password match any user in the database
+  const user = users.find(user => user.username === username && user.password === password);
+
+  if (user) {
+    // Store the username in localStorage
+    localStorage.setItem("username", username);
+  
+    // Redirect to the home page
+    window.location.replace("index.html");
   } else {
-    // Handle any errors
-    res.status(401).send('Login failed!');
+    alert("Invalid username or password.");
+  }
+  
+}
+
+const passwordInput = document.getElementById("password");
+const eyeIcon = document.getElementById("eye");
+
+eyeIcon.addEventListener("click", () => {
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    eyeIcon.classList.remove("closed");
+  } else {
+    passwordInput.type = "password";
+    eyeIcon.classList.add("closed");
   }
 });
 
-// For testing purposes, we'll set up two sets of login credentials
-const validCredentials = [
-  { username: 'user1', email: 'user1@example.com', password: 'password1' },
-  { username: 'user2', email: 'user2@example.com', password: 'password2' },
-];
+  
+// Add event listener to the login form
+document.getElementById("login-form").addEventListener("submit", login);
 
-// Check if the submitted login credentials are valid
-function validateCredentials(username, email, password) {
-  return validCredentials.some((credentials) => {
-    return credentials.username === username && credentials.email === email && credentials.password === password;
-  });
-}
-
-app.listen(3000, () => {
-  console.log('Server started on port 3000');
-});
-const path = require('path');
-
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-      },
-    ],
-  },
-};
+// Add event listener to the show password checkbox
+document.getElementById("show-password").addEventListener("change", showPassword);
