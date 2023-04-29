@@ -27,7 +27,7 @@
 
 
 
-    <nav class="p-3 ps-0 pe-0">
+    <nav class="p-3 ps-0 pe-0 position-fixed w-100">
         <div class="container-fluid">
             <div class="container d-flex align-items-center justify-content-between">
                 <div class="container p-0">
@@ -83,23 +83,26 @@
     </nav>
 
     <section id="hero-section">
-        <div class="container-fluid p-5  m-0 hero-container">
-            <div class="container p-0 d-flex flex-column align-items-center justify-content-center">
+        <div class="container-fluid px-5  m-0 hero-container d-flex justify-content-center align-items-center">
+            <div class="container p-0 d-flex flex-column align-items-center justify-content-center" id="hero-text-container">
                 <div class="container p-0 text-center">
                     <h1 class="text-uppercase hero-title">Pantry<span>Pal</span></h1>
                 </div>
-                <div class="container p-0 text-center">
-                    <p class="hero-text">Lorem ipsum <span>dolor sit</span> amet, consectetur adipiscing elit. Praesent
-                        sed justo et nunc malesuada bibendum. <span>Aenean mollis</span> lacinia euismod. Nulla et ex
-                        odio.</p>
-                </div>
                 <div class="container">
-                    <a href="#" class="btn btn-primary w-100" id="hero-button">Get Started</a>
+                    <div class="container p-0 text-center">
+                        <p class="hero-text">Lorem ipsum <span>dolor sit</span> amet, consectetur adipiscing elit. Praesent
+                            sed justo et nunc malesuada bibendum. <span>Aenean mollis</span> lacinia euismod. Nulla et ex
+                            odio.</p>
+                    </div>
+                    <div class="container">
+                        <a href="#" class="btn btn-primary w-100" id="hero-button">Get Started</a>
+                    </div>
                 </div>
+                
             </div>
 
         </div>
-        <img src="assets/green-shape.png" class="header-shape">
+        
     </section>
 
     <section id="step-section">

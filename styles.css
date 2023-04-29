@@ -37,7 +37,7 @@ h5 {
 /* ==== Navbar ==== */
 
 nav {
-    background-color: var(--color-primary);
+    
 }
 
 .burger-menu {
@@ -51,7 +51,7 @@ nav {
 }
 
 .nav-title span {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 .nav-item {
@@ -60,13 +60,22 @@ nav {
 }
 
 .nav-item:hover {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 /* ==== Hero Section ==== */
 
+#hero-section {
+    height: 75vh;
+    background-color: var(--color-primary);
+}
+
 .hero-container {
     background-color: var(--color-primary);
+    height: 100%;
+    background-image: url(/assets/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .header-shape {
@@ -83,7 +92,7 @@ nav {
 }
 
 .hero-title span {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 .hero-text {
@@ -93,7 +102,7 @@ nav {
 }
 
 .hero-text span {
-    color: var(--color-black);
+    color: var(--color-primary);
 }
 
 #hero-button {
@@ -174,6 +183,10 @@ nav {
     .card-text {
         text-align: center;
     }
+
+    #hero-text-container {
+        width: 75%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -191,6 +204,10 @@ nav {
 
     .card-text {
         text-align: left;
+    }
+
+    #hero-text-container {
+        width: 50%;
     }
 }
 
