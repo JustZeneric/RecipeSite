@@ -36,8 +36,8 @@ h5 {
 
 /* ==== Navbar ==== */
 
-nav {
-    
+#offcanvasRight {
+    background-color: var(--color-primary);
 }
 
 .burger-menu {
