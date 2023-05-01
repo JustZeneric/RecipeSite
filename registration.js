@@ -1,31 +1,50 @@
-const express = require('express');
-const mysql = require('mysql');
 
-const app = express();
+const passwordInput = document.getElementById("password");
+const eyeIcon = document.getElementById("eye");
 
-// Configure MySQL connection
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'username',
-  password: 'password',
-  database: 'userdb'
-});
-
-// Connect to MySQL
-connection.connect((err) => {
-  if (err) {
-    console.error('Error connecting to database: ' + err.stack);
-    return;
+eyeIcon.addEventListener("click", () => {
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    eyeIcon.classList.remove("closed");
+  } else {
+    passwordInput.type = "password";
+    eyeIcon.classList.add("closed");
   }
-  console.log('Connected to database with ID ' + connection.threadId);
 });
 
-// Set up routes
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
 
-// Start server
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+const form = document.getElementById("registration-form");
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  
+  const url = "https://api.backendless.com/<E3445B62-E657-3EB3-FF35-C9710D47EE00>/<C71CEADD-7AE5-4A8C-AB6D-4764AC773CA7>/users/register";
+  const data = {
+    username: username,
+    email: email,
+    password: password
+  };
+  
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Handle successful registration
+    console.log(data);
+    alert("Registration successful. You may now log in.");
+    window.location.href = "login.html";
+  })
+  .catch(error => {
+    // Handle error
+    console.error(error);
+    alert("Registration failed. Please try again.");
+  });
 });

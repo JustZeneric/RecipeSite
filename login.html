@@ -9,46 +9,47 @@
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-        
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/767fb43fc0.js" crossorigin="anonymous"></script>
+    
     <title>Document</title>
 </head>
 
 <body>
     <section>
-        <h1 class="header">Pantry<span>Pal</span></h1>
-        <div class="form-Center">
-            <div class="form-Border">
-                <div class="login-Head">
-                    <h1>Login to Pantry Pal account</h1>
-                    <p>One account for everything, including saving recipes. <a href="#">Learn more</a></p>
-               
-                </div>
-
-                <form id="login-form">
-                    <div class="form-Center">
-                      <label for="username">Username</label>
-                      <input type="text" id="username" name="username">
-                      <label for="password">Password</label>
-                      <input type="password" id="password" name="password">
-                      <div class="show-password">
-                        <input type="checkbox" id="show-password" name="show-password">
-                        <label for="show-password">Show Password</label>
-                      </div>
-                      <button type="submit" class="sign"><i class="fa-solid fa-lock"></i>Sign In</button>
-                      <a class="reset" href="#">I forgot my Password or Email</a>
-                      <div class="register">
-                        <h5>Don't have an account yet ?<span><a href="registration.html">Sign up now</a></span></h5>
-                      </div>
-                    </div>
-                </form>
-            </div>
+      <div class="form-Container">
+        <div class="form-Border">
+        <div class="image-Container">
+          <center><img src="./assets/Funny cup of coffee walking.png" width="300"></center>
         </div>
-       <div class="login-Links">
-         <a href="#"><img src="./assets/btn_google_signin_dark_normal_web@2x.png" width="200px" height="50px"></a>
-         <a href="#"><img src="./assets/btn_google_signin_dark_normal_web@2x.png" width="200px" height="50px"></a>
-       </div>
+        <div class="header">
+          <h1>Hello Again!</h1>
+          <p>Welcome Back</p>
+        </div>
+        <form>
+          <div class="username-Container">
+          <input type="text" id="username" name="username" placeholder="Username">
+        </div>
+          <div class="password-container">
+            <input type="password" placeholder="Password" id="password">
+            <i class="fa-solid fa-eye" id="eye"></i>
+          </div>
+          <div class="pass">
+          <a class="forgot" href="#">Forgot Password?</a>
+        </div>
+        </form>
+      <div class="signin">
+      <a href="index.html">Login</a>
+      </div>
+    
+      </div>
+      <div class="register">
+        <h5>Don't Have An Account ? <span><a href="registration.html">Sign Up</a></span></h5>
+      </div>
+    </div>
+ 
     </section>
     <script src="login.js"></script>
 </body>

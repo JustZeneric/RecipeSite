@@ -26,18 +26,23 @@ function login(event) {
   
 }
 
-// Show password function
-function showPassword() {
-  const passwordInput = document.getElementById("password");
+const passwordInput = document.getElementById("password");
+const eyeIcon = document.getElementById("eye");
+
+eyeIcon.addEventListener("click", () => {
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
+    eyeIcon.classList.remove("closed");
   } else {
     passwordInput.type = "password";
+    eyeIcon.classList.add("closed");
   }
-}
+});
 
+  
 // Add event listener to the login form
 document.getElementById("login-form").addEventListener("submit", login);
 
 // Add event listener to the show password checkbox
 document.getElementById("show-password").addEventListener("change", showPassword);
+// Initialize the FirebaseUI Widget using Firebase.

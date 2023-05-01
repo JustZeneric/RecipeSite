@@ -4,149 +4,245 @@
 }
 section {
     height: 100vh;
-
-}
-.sign-In {
-    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    top: 15px;
-    right: 30px;
-    font-family: 'Roboto', sans-serif;
-
-
+    justify-content: center;
+    background-color: #E6EBF2;
 }
-.sign-In p {
-    font-size: 13px;
+.have-Account {
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
-.sign-In a {
-    font-size: 15px;
+.have-Account h5 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 100;
+}
+.have-Account a {
     text-decoration: none;
-    border: 1px solid black;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-    border-radius: 5px;
+    border: 1px transparent;
+    background-color: #698C68;
     color: white;
-    background-color: rgb(0, 92, 179);
-
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'DM Sans', sans-serif;
 }
-.sign-In a:hover {
-    color: black;
-    background-color: white;
-}
-.header {
-    
-    top: 20px;
-    left: 50px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.header span {
-    color: black;
- 
-    font-weight: 700;
-}
-.form-center {
+.form-Container {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-height: 100%;
-background-color: #5F9B43;
-font-family: 'Roboto', sans-serif;
-
-  
-
-  
 }
-.form-border {
-    width: 70%;
-    padding: 25px;
-    border: 1px solid #D9D9D9;
-    border-radius: 5px;
-    background-color: #ffffff;
 
-
-}
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  width: 100%;
-margin-top: 50px;
-
-
-
-
-  
-}
-.reg-Head {
-    width: 90%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-gap: 30px;
-width: 100%;
-}
-.reg-Head h1 {
-    font-size: 25px;
-    font-weight: 500;
-}
-.reg-Head a {
-    text-decoration: none;
-}
-label {
-    width: 100%;
-    margin-bottom: 10px;
-}
-input {
-    margin-bottom: 30px;
-    width: 100%;
-    height: 30px;
-    padding-left: 10px;
-    border-radius: 5px;
-    border: 2px solid black;
-}
-.create {
-    text-decoration: none;
+.form-Border {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+
+    height: 75%;
+    width: 90%;
+    background-color: #E6EBF2;
+    border-radius: 10px;
+}
+
+.image-Container {
+    width: 100%;
+}
+
+.header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header h1 {
+    font-size: 35px;
+    font-family: 'DM Sans', sans-serif;
+ 
+}
+
+.header p {
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#5F9B43;
-  gap: 10px;
+    margin-top: 30px;
     width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-    font-size: 20px;
-    border-radius: 10px;
-color: white;
+    gap: 15px;
 }
-.create:hover {
-    color: black;
+
+.username-Container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
-.login-Info {
-  
-  margin-top: 20px;
-    text-align: start;
-    color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
+
+.username-Container input[type="username"],
+.username-Container input[type="text"] {
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing: border-box;
+
 }
-.login-Info a {
+
+.password-container {
+    width: 80%;
+    position: relative;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing: border-box;
+}
+.email-Container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.email-Container input[type="email"],
+.email-Container input[type="email"] {
+    width: 100%;
+    padding: 12px 36px 12px 12px;
+    box-sizing: border-box;
+}
+.fa-eye {
+    position: absolute;
+    top: 35%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+}
+
+
+.fa-eye ::before {
+    content: "\f06e";
+    font-family: "Font Awesome 6 Solid";
+    font-size: 18px;
+}
+
+.fa-eye.closed::before {
+    content: "\f070";
+    text-decoration: line-through;
+}
+
+input {
+    height: 50px;
+    border: 2px solid #698C68;
+    border-radius: 20px;
+    text-indent: 10px;
+    width: 80%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 80%;
+}
+
+.pass {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+
+    
+}
+
+.register a {
     text-decoration: none;
-    color: #0051ad;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: 2px transparent;
+    padding-top:20px;
+    padding-bottom: 20px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: #698C69;
+    font-family: 'DM Sans', sans-serif;
+
 }
-.login-Info a:hover {
-    color: #4ee4ff;
+.terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
 }
+.terms h5 {
+    font-family: 'DM Sans', sans-serif;
+    width: 60%;
+    font-weight: 100;
+}
+.terms a {
+    text-decoration: none;
+    color: #698C68;
+    font-weight: 100;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .form-Border {
+      height: 75%;
+      width: 80%;
+
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .form-Border {
+      height: 75%;
+      width: 70%;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .form-Border {
+      height: 75%;
+      width: 60%;
+    }
+  }
+  
+  /* X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .form-Border {
+      height: 75%;
+      width: 50%;
+    }
+  }
+  
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+    .form-Border {
+      height: 75%;
+      width: 40%;
+    }
+  }
