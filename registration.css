@@ -1,349 +1,853 @@
 * {
     margin: 0;
     padding: 0;
-}
-section {
+  }
+  
+  section {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #E6EBF2;
-}
-.have-Account {
-   position: absolute;
-   top: 10px;
-   right: 20px;
-   display: flex;
-   align-items: center;
-   gap: 10px;
-}
-.have-Account h5 {
+  }
+  
+  .have-Account {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  
+  .have-Account h5 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 100;
-}
-.have-Account a {
+  }
+  
+  .have-Account a {
     text-decoration: none;
-    border: 1px transparent;
+    border: 0.063rem transparent;
     background-color: #698C68;
     color: white;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
     font-family: 'DM Sans', sans-serif;
-}
-.form-Container {
+  }
+  
+  .form-Container {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.form-Border {
+  }
+  
+  .form-Border {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    height: 75%;
+    height: 60%;
     width: 90%;
     background-color: #E6EBF2;
-    border-radius: 10px;
-}
-
-.image-Container {
+    border-radius: 0.625rem;
+  }
+  
+  .image-Container {
     width: 100%;
-}
-
-.header {
+  }
+  .image-Container img {
+    width: 15rem;
+  }
+  
+  .header {
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-
-}
-
-.header h1 {
-    font-size: 35px;
-    font-family: 'DM Sans', sans-serif;
- 
-}
-
-.header p {
-    font-size: 12px;
-    font-family: 'DM Sans', sans-serif;
+    gap: 0.625rem;
+  }
   
-}
-
-form {
+  .header h1 {
+    font-size: 2.188rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .header p {
+    font-size: 0.75rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     width: 100%;
-    gap: 15px;
-}
-
-.username-Container {
+    gap: 0.938rem;
+  }
+  
+  .username-Container {
     width: 80%;
     display: flex;
     justify-content: center;
-}
-
-.username-Container input[type="username"],
-.username-Container input[type="text"] {
+  }
+  
+  .username-Container input[type="username"],
+  .username-Container input[type="text"] {
     width: 100%;
-    padding: 12px 36px 12px 12px;
+    padding: 1.5rem 4.5rem 1.5rem 1.5rem;
     box-sizing: border-box;
-
-}
-
-.password-container {
+  }
+  
+  .password-container {
     width: 80%;
     position: relative;
-}
-
-.password-container input[type="password"],
-.password-container input[type="text"] {
+  }
+  
+  .password-container input[type="password"],
+  .password-container input[type="text"] {
     width: 100%;
-    padding: 12px 36px 12px 12px;
+    padding: 1.5rem 4.5rem 1.5rem 1.5rem;
     box-sizing: border-box;
-}
-.email-Container {
+  }
+  
+  .email-Container {
     width: 80%;
     display: flex;
     justify-content: center;
-}
-.email-Container input[type="email"],
-.email-Container input[type="email"] {
+  }
+  
+  .email-Container input[type="email"],
+  .email-Container input[type="email"] {
     width: 100%;
-    padding: 12px 36px 12px 12px;
+    padding: 1.5rem 4.5rem 1.5rem 1.5rem;
     box-sizing: border-box;
-}
-.fa-eye {
+  }
+  
+  .fa-eye {
     position: absolute;
     top: 35%;
     right: 4%;
     cursor: pointer;
     color: lightgray;
-}
-
-
-.fa-eye ::before {
+  }
+  
+  .fa-eye ::before {
     content: "\f06e";
+    font-family: "Font Awesome 6 Solid";
+    font-size: 1.125rem;
+  }
+  
+  .fa-eye.closed::before {
+    content: "\f070";
+    text-decoration: line-through;
     font-family: "Font Awesome 6 Solid";
     font-size: 18px;
 }
 
-.fa-eye.closed::before {
-    content: "\f070";
-    text-decoration: line-through;
-}
-
 input {
-    height: 50px;
-    border: 2px solid #698C68;
-    border-radius: 20px;
-    text-indent: 10px;
+    height: 5vw;
+    border: 2px solid black;
+    border-radius: 2vw;
+    text-indent: 1vw;
     width: 80%;
     font-family: 'DM Sans', sans-serif;
-}
-
-.input-wrapper {
+  }
+  
+  .input-wrapper {
     position: relative;
     width: 80%;
-}
-
-.pass {
+  }
+  
+  .pass {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1vw;
     width: 80%;
-}
-
-.register {
+  }
+  
+  .register {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 3vw;
     width: 100%;
-
-    
-}
-
-.register a {
+  }
+  
+  .register a {
     text-decoration: none;
     color: white;
     display: flex;
     justify-content: center;
-    border: 2px transparent;
-    padding-top:20px;
-    padding-bottom: 20px;
+    border: 0.2vw transparent;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     width: 80%;
-    border-radius: 30px;
+    border-radius: 5vw;
     background-color: #698C69;
     font-family: 'DM Sans', sans-serif;
-
-}
-.terms {
+  }
+  
+  .terms {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     width: 100%;
     text-align: center;
-    margin-top: 40px;
-}
-.terms h5 {
+    margin-top: 4vw;
+  }
+  
+  .terms h5 {
     font-family: 'DM Sans', sans-serif;
     width: 60%;
     font-weight: 100;
-}
-.terms a {
+  }
+  
+  .terms a {
     text-decoration: none;
     color: #698C68;
     font-weight: 100;
-}
-/* For screens smaller than 600px */
-@media (max-width: 600px) {
-    .header h1 {
-      font-size: 28px;
-    }
-    
-    .input-wrapper {
-      width: 100%;
-    }
-    
-    input {
-      width: 100%;
-    }
-    
-    .pass {
-      flex-direction: column;
-      gap: 5px;
-    }
-    
-    .fa-eye {
-      top: 43%;
-      right: 8%;
-    }
-    
-    .terms h5 {
-      width: 90%;
-    }
   }
-  
-  /* For screens between 600px and 900px */
-  @media (min-width: 600px) and (max-width: 900px) {
-    .header h1 {
-      font-size: 30px;
-    }
-    
-    .input-wrapper {
-      width: 100%;
-    }
-    
-    input {
-      width: 100%;
-    }
-    
-    .pass {
-      flex-direction: column;
-      gap: 5px;
-    }
-    
-    .fa-eye {
-      top: 43%;
-      right: 8%;
-    }
-    
-    .terms h5 {
-      width: 80%;
-    }
-  }
-  
-  /* For screens larger than 900px */
-  @media (min-width: 900px) {
-    .form-Container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .form-Border {
-      height: 85%;
-      width: 50%;
-    }
-    
-    .image-Container {
-      width: 50%;
-    }
-    
-    .header h1 {
-      font-size: 35px;
-    }
-    
-    .input-wrapper {
-      width: 80%;
-    }
-    
-    input {
-      width: 100%;
-    }
-    
-    .pass {
-      flex-direction: row;
-      gap: 10px;
-    }
-    
-    .fa-eye {
-      top: 35%;
-      right: 4%;
-    }
-    
-    .terms h5 {
-      width: 60%;
-    }
-  }
-  @media only screen and (max-width: 415px) {
-    section {
-      /* adjust height and justify-content as needed */
-      height: auto;
-      justify-content: flex-start;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
+    /* your CSS rules for smartphones/mobiles (portrait) go here */
+ 
     .have-Account {
-      /* adjust top and right positions as needed */
-      top: 20px;
-      right: 10px;
-    }
-    .form-Border {
-      /* adjust height as needed */
-      height: 90%;
-    }
-    .header h1 {
-      /* adjust font size as needed */
-      font-size: 25px;
-    }
-    form {
-      /* adjust margin-top as needed */
-      margin-top: 20px;
-    }
-    input {
-      /* adjust height and font-size as needed */
-      height: 40px;
-      font-size: 14px;
-    }
-    .register a {
-      /* adjust padding-top, padding-bottom, and font-size as needed */
-      padding-top: 10px;
-      padding-bottom: 10px;
-      font-size: 14px;
-    }
-    .terms h5 {
-      /* adjust font-size as needed */
-      font-size: 12px;
-    }
+        top: 0.5rem;
+        right: 1rem;
+        flex-direction: row;
+        align-items: center;
+
+
+      }
+      
+      .have-Account h5 {
+        font-size: 0.75rem;
+      }
+      
+      .have-Account a {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+      }
+      
+      .form-Container {
+        height: auto;
+       
+      }
+      
+      .form-Border {
+        height: auto;
+        width: 80%;
+        padding: 1rem;
+        border-radius: 0.3125rem;
+      }
+      
+      .image-Container img {
+        width: 10rem;
+      }
+      
+      .header {
+        width: 100%;
+        gap: 0.3125rem;
+      }
+      
+      .header h1 {
+        font-size: 1.5rem;
+      }
+      
+      .header p {
+        font-size: 0.625rem;
+      }
+      
+      .username-Container input[type="username"],
+      .username-Container input[type="text"],
+      .password-container input[type="password"],
+      .password-container input[type="text"],
+      .email-Container input[type="email"],
+      .email-Container input[type="email"] {
+        padding: 1rem;
+      }
+      
+      .fa-eye {
+        top: 27%;
+        right: 5%;
+      }
+      
+      input {
+        height: 10vw;
+        border-width: 0.5vw;
+        border-radius: 10vw;
+        text-indent: 2vw;
+        font-size: 0.875rem;
+      }
+      
+      .input-wrapper {
+        width: 100%;
+      }
+      
+      .pass {
+        gap: 2vw;
+        flex-wrap: wrap;
+      }
+      
+      .register a {
+        padding-top: 2.5vw;
+        padding-bottom: 2.5vw;
+        width: 80%;
+        font-size: 0.875rem;
+      }
+      
+      .terms h5 {
+        font-size: 0.75rem;
+        width: 80%;
+      }
+  }
+  /*low resolution tablets, mobiles (landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .have-Account {
+        top: 1rem;
+        right: 1rem;
+        flex-direction: row;
+        align-items: center;
+     
+      }
+      .have-Account h5 {
+        font-size: 1rem;
+      }
+      
+      .have-Account a {
+        padding: 0.7rem;
+        font-size: 1rem;
+      }
+      
+      .form-Container {
+        height: auto;
+       
+      }
+      
+      .form-Border {
+        height: auto;
+        width: 70%;
+        padding: 1rem;
+        border-radius: 0.3125rem;
+      }
+      
+      .image-Container img {
+        width: 18rem;
+      }
+      
+      .header {
+        width: 100%;
+        gap: 0.3125rem;
+      }
+      
+      .header h1 {
+        font-size: 2rem;
+      }
+      
+      .header p {
+        font-size: 0.9rem;
+      }
+      
+      .username-Container input[type="username"],
+      .username-Container input[type="text"],
+      .password-container input[type="password"],
+      .password-container input[type="text"],
+      .email-Container input[type="email"],
+      .email-Container input[type="email"] {
+        padding: 1rem;
+      }
+      
+      .fa-eye {
+        top: 30%;
+        right: 5%;
+        font-size: 1rem;
+      }
+      
+      input {
+        height: 8vw;
+      
+        border-radius: 10vw;
+        text-indent: 2vw;
+        font-size: 0.875rem;
+      }
+      
+      .input-wrapper {
+        width: 100%;
+      }
+      
+      .pass {
+        gap: 2vw;
+        flex-wrap: wrap;
+      }
+      
+      .register a {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        width: 80%;
+        font-size: 1.3rem;
+      }
+      
+      .terms h5 {
+        font-size: 1rem;
+        width: 80%;
+      }
+}
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 800px) {
+  .have-Account {
+    top: 1rem;
+    right: 1rem;
+    flex-direction: row;
+    align-items: center;
+ 
+  }
+  .have-Account h5 {
+    font-size: 1rem;
   }
   
+  .have-Account a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  .form-Container {
+    height: auto;
+   
+  }
+  
+  .form-Border {
+    height: auto;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 0.3125rem;
+  }
+  
+  .image-Container img {
+    width: 18rem;
+  }
+  
+  .header {
+    width: 100%;
+    gap: 0.3125rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  
+  .username-Container input[type="username"],
+  .username-Container input[type="text"],
+  .password-container input[type="password"],
+  .password-container input[type="text"],
+  .email-Container input[type="email"],
+  .email-Container input[type="email"] {
+    padding: 1rem;
+  }
+  
+  .fa-eye {
+    top: 30%;
+    right: 5%;
+    font-size: 1rem;
+  }
+  
+  input {
+    height: 8vw;
+  
+    border-radius: 10vw;
+    text-indent: 2vw;
+    font-size: 0.875rem;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+  }
+  
+  .pass {
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  .register a {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    width: 80%;
+    font-size: 1.3rem;
+  }
+  
+  .terms h5 {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+@media (min-width: 801px) and (max-width: 1025px) {
+  .have-Account {
+    top: 1rem;
+    right: 1rem;
+    flex-direction: row;
+    align-items: center;
+ 
+  }
+  .have-Account h5 {
+    font-size: 1rem;
+  }
+  
+  .have-Account a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  .form-Container {
+    height: auto;
+   
+  }
+  
+  .form-Border {
+    height: auto;
+    width: 70%;
+    padding: 1rem;
+    border-radius: 0.3125rem;
+  }
+  
+  .image-Container img {
+    width: 18rem;
+  }
+  
+  .header {
+    width: 100%;
+    gap: 0.3125rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  
+  .username-Container input[type="username"],
+  .username-Container input[type="text"],
+  .password-container input[type="password"],
+  .password-container input[type="text"],
+  .email-Container input[type="email"],
+  .email-Container input[type="email"] {
+    padding: 1rem;
+  }
+  
+  .fa-eye {
+    top: 30%;
+    right: 5%;
+    font-size: 1rem;
+  }
+  
+  input {
+    height: 7vw;
+    border-radius: 10vw;
+    text-indent: 2vw;
+    font-size: 0.875rem;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+  }
+  
+  .pass {
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  .register a {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 80%;
+    font-size: 1.3rem;
+  }
+  
+  .terms h5 {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .have-Account {
+    top: 1rem;
+    right: 1rem;
+    flex-direction: row;
+    align-items: center;
+ 
+  }
+  .have-Account h5 {
+    font-size: 1rem;
+  }
+  
+  .have-Account a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  .form-Container {
+    height: auto;
+   
+  }
+  
+  .form-Border {
+    height: auto;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 0.3125rem;
+  }
+  
+  .image-Container img {
+    width: 18rem;
+  }
+  
+  .header {
+    width: 100%;
+    gap: 0.3125rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  
+  .username-Container input[type="username"],
+  .username-Container input[type="text"],
+  .password-container input[type="password"],
+  .password-container input[type="text"],
+  .email-Container input[type="email"],
+  .email-Container input[type="email"] {
+    padding: 1rem;
+  }
+  
+  .fa-eye {
+    top: 30%;
+    right: 5%;
+    font-size: 1rem;
+  }
+  
+  input {
+    height: 7vw;
+  
+    border-radius: 10vw;
+    text-indent: 2vw;
+    font-size: 0.875rem;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+  }
+  
+  .pass {
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  .register a {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  
+  .terms h5 {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .have-Account {
+    top: 1rem;
+    right: 1rem;
+    flex-direction: row;
+    align-items: center;
+ 
+  }
+  .have-Account h5 {
+    font-size: 1rem;
+  }
+  
+  .have-Account a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  .form-Container {
+    height: auto;
+   
+  }
+  
+  .form-Border {
+    height: auto;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 0.3125rem;
+  }
+  
+  .image-Container img {
+    width: 18rem;
+  }
+  
+  .header {
+    width: 100%;
+    gap: 0.3125rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  
+  .username-Container input[type="username"],
+  .username-Container input[type="text"],
+  .password-container input[type="password"],
+  .password-container input[type="text"],
+  .email-Container input[type="email"],
+  .email-Container input[type="email"] {
+    padding: 1rem;
+  }
+  
+  .fa-eye {
+    top: 30%;
+    right: 5%;
+    font-size: 1rem;
+  }
+  
+  input {
+    height: 6vw;
+  
+    border-radius: 10vw;
+    text-indent: 2vw;
+    font-size: 0.875rem;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+  }
+  
+  .pass {
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  .register a {
+    padding-top: 1.8vw;
+    padding-bottom: 1.8vw;
+    width: 80%;
+    font-size: 1.3rem;
+  }
+  
+  .terms h5 {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+/*desktops - higher resolution*/
+@media (min-width: 1281px) and (max-width: 1400px ) {
+  .have-Account {
+    top: 1rem;
+    right: 1rem;
+    flex-direction: row;
+    align-items: center;
+ 
+  }
+  .have-Account h5 {
+    font-size: 1rem;
+  }
+  
+  .have-Account a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  .form-Container {
+    height: auto;
+   
+  }
+  
+  .form-Border {
+    height: auto;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 0.3125rem;
+  }
+  
+  .image-Container img {
+    width: 18rem;
+  }
+  
+  .header {
+    width: 100%;
+    gap: 0.3125rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header p {
+    font-size: 0.9rem;
+  }
+  
+  .username-Container input[type="username"],
+  .username-Container input[type="text"],
+  .password-container input[type="password"],
+  .password-container input[type="text"],
+  .email-Container input[type="email"],
+  .email-Container input[type="email"] {
+    padding: 1rem;
+  }
+  
+  .fa-eye {
+    top: 30%;
+    right: 5%;
+    font-size: 1rem;
+  }
+  
+  input {
+    height: 5vw;
+  
+    border-radius: 10vw;
+    text-indent: 2vw;
+    font-size: 0.875rem;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+  }
+  
+  .pass {
+    gap: 2vw;
+    flex-wrap: wrap;
+  }
+  
+  .register a {
+    padding-top: 1.7vw;
+    padding-bottom: 1.7vw;
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  
+  .terms h5 {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
+@media (min-width: 1401px) and (max-width: 1920px) {
+ 
+}
