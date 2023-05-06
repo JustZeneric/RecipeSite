@@ -41,7 +41,7 @@ h5 {
 }
 
 .burger-menu {
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 
@@ -51,7 +51,7 @@ h5 {
 }
 
 .nav-title span {
-    color: var(--color-primary);
+    color: var(--color-black);
 }
 
 .nav-item {
@@ -71,9 +71,8 @@ h5 {
 }
 
 .hero-container {
-    background-color: var(--color-primary);
+    background: radial-gradient(circle, rgba(95,155,67,1) 0%, rgba(125,203,88,1) 100%);
     height: 100%;
-    background-image: url(/assets/hero-background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -92,7 +91,7 @@ h5 {
 }
 
 .hero-title span {
-    color: var(--color-primary);
+    color: var(--color-black);
 }
 
 .hero-text {
@@ -102,7 +101,7 @@ h5 {
 }
 
 .hero-text span {
-    color: var(--color-primary);
+    color: var(--color-black);
 }
 
 #hero-button {
@@ -115,7 +114,7 @@ h5 {
 
 #hero-button:hover {
     color: var(--color-white);
-    background-color: #44752d;
+    background-color: var(--color-black);
 }
 
 /* ==== CARDS SECTION ==== */
