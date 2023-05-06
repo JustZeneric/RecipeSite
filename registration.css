@@ -307,4 +307,43 @@ input {
       width: 60%;
     }
   }
+  @media only screen and (max-width: 415px) {
+    section {
+      /* adjust height and justify-content as needed */
+      height: auto;
+      justify-content: flex-start;
+    }
+    .have-Account {
+      /* adjust top and right positions as needed */
+      top: 20px;
+      right: 10px;
+    }
+    .form-Border {
+      /* adjust height as needed */
+      height: 90%;
+    }
+    .header h1 {
+      /* adjust font size as needed */
+      font-size: 25px;
+    }
+    form {
+      /* adjust margin-top as needed */
+      margin-top: 20px;
+    }
+    input {
+      /* adjust height and font-size as needed */
+      height: 40px;
+      font-size: 14px;
+    }
+    .register a {
+      /* adjust padding-top, padding-bottom, and font-size as needed */
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 14px;
+    }
+    .terms h5 {
+      /* adjust font-size as needed */
+      font-size: 12px;
+    }
+  }
   
