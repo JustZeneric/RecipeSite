@@ -45,3 +45,4 @@ document.getElementById("login-form").addEventListener("submit", login);
 
 // Add event listener to the show password checkbox
 document.getElementById("show-password").addEventListener("change", showPassword);
+// Initialize the FirebaseUI Widget using Firebase.

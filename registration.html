@@ -8,52 +8,55 @@
     <link rel="stylesheet" href="registration.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/767fb43fc0.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
     <title>Document</title>
 </head>
 
 <body>
 
     <section>
-<div class="sign-In">
-    <p>Already have an account ?</p>
-    <a href="#"><i class="fa-solid fa-lock"></i> Sign in</a>
-</div>
-
-
-        <div class="form-center">
+        <div class="have-Account">
+            <h5>Already Have An Account?</h5>
+            <a href="login.html">Sign In</a>
+        </div>
+        <div class="form-Container">
+            <div class="form-Border">
+            <div class="image-Container">
+              <center><img src="./assets/Avocado doing exercises.png"></center>
+            </div>
             <div class="header">
-                <h1>Pantry<span>Pal</span></h1>
-
+              <h1>Getting Started</h1>
+              <p>Create An Account For A Complete Experience</p>
             </div>
-            <div class="form-border">
-
-                <div class="reg-Head">
-                    <h1>Create an Pantry Pal account</h1>
-                    <p>One account for everything, including saving recipes. <a href="#">Learn more</a></p>
-                </div>
-                <form>
-
-                    <label for="username">Username: </label>
-                    <input type="username" id="username" name="username">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-                    <a class="create" href="#"><i class="fa-solid fa-lock"></i>Create Account</a>
-                    <div class="login-Info">
-
-
-                        <a href="#">I forgot my Password or Username</a>
-
-                    </div>
+            <form id="registration-form">
+                
+              <div class="username-Container">
+              <input type="text" id="username" name="username" placeholder="Username">
             </div>
+            <div class="email-Container">
+            <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+              <div class="password-container">
+                <input type="password" id="password" placeholder="Password" >
+                <i class="fa-solid fa-eye" id="eye"></i>
+              </div>
+
             </form>
-        </div>
-        </div>
+          <div class="register">
+          <a href="#">Register</a>
+          </div>
+          <div class="terms">
+            <h5>By signing up you are agreeing to our <span><a href="#">User Agreement</a></span> and <span><a href="#">Privacy Policy.</a></span></h5>
+          </div>
+          
     </section>
+    <script src="registration.js"></script>
 </body>
 
 </html>

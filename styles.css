@@ -37,13 +37,12 @@ h5 {
 /* ==== Navbar ==== */
 
 #offcanvasRight {
-    background-color: var(--color-primary);
+    background: linear-gradient(180deg, rgba(95,155,67,1) 0%, rgba(125,203,88,1) 100%);
 }
 
 .burger-menu {
     color: var(--color-black);
 }
-
 
 
 .nav-title {
@@ -56,12 +55,13 @@ h5 {
 
 .nav-item {
     transition: color 0.2s ease;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .nav-item:hover {
     color: var(--color-primary);
 }
+
 
 /* ==== Hero Section ==== */
 
@@ -74,7 +74,6 @@ h5 {
     background: radial-gradient(circle, rgba(95,155,67,1) 0%, rgba(125,203,88,1) 100%);
     height: 100%;
     background-size: cover;
-    background-position: center;
 }
 
 .header-shape {
