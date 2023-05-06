@@ -1,0 +1,26 @@
+:root {
+    --color-primary: #5F9B43;
+    --color-secondary: #D9D9D9;
+    --color-black: #1E1E1E;
+    --color-white: #E6EBF2;
+
+    --font-primary: 'Noto Serif', serif;
+    --font-secondary: 'DM Sans', sans-serif;
+    --font-heading: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: var(--color-primary);
+}
+
+
+
+.table-container {
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+}
+#table-body {
+    background-color: var(--color-white);
+
+}
+
