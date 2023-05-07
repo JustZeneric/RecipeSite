@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fridge - PantryPal</title>
+    <link href="fridge.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+
+    <script src="https://kit.fontawesome.com/cfe963e301.js" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <nav class="p-3 ps-0 pe-0 w-100">
+        <div class="container-fluid">
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="container p-0">
+                    <h1 class="m-0 text-uppercase nav-title">P<span>P</span></h1>
+                </div>
+                <div class="container d-flex justify-content-end align-items-center p-0">
+                    <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-bars fs-1 burger-menu"></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header ms-3 mt-2 d-flex justify-content-end">
+
+                            <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-uppercase ms-3 text-light">About</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-uppercase ms-3 text-light">Recipes</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="login.html"
+                                        class="text-decoration-none text-uppercase btn btn-light ms-2">Login</a>
+                                </li>
+                                <li>
+                                    <p class="ms-3">Don't Have An Account ? <span><a href="registration.html"
+                                                class="text-light text">Sign Up</a></span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul
+                        class="d-flex list-unstyled align-items-center justify-content-center m-0 d-none d-md-flex nav-list">
+                        <li class="d-flex align-items-center justify-content-center">
+                            <a href="#" target="_blank" class="text-decoration-none text-uppercase nav-item">About</a>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-center">
+                            <a href="#" target="_blank"
+                                class="text-decoration-none ms-3 text-uppercase nav-item">Recipes</a>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-center" id="login-link">
+                            <a href="login.html" target="_blank"
+                                class="text-decoration-none ms-3 text-uppercase btn btn-light btn-login"
+                                id="login-btn">Login</a>
+
+
+                        </li>
+                        <div id="username-display"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container-fluid d-flex justify-content-center h-100">
+            <div class="container p-5">
+                <!-- Nav tabs -->
+                <div class="container p-3 table-container">
+
+                    
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#home">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#menu1">Carbs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#menu2">Veg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#menu3">Dairy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#menu4">Meat</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container active p-0" id="home">
+                            <table class="table" id="table-body">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th class="text-center">Qty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Apple</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Avocado</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tomato</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane container fade p-0" id="menu1">
+                            <table class="table" id="table-body">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th class="text-center">Qty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bread</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Flour</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pasta</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane container fade p-0" id="menu2">
+                            <table class="table" id="table-body">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th class="text-center">Qty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Broccoli</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cauliflower</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Butternut</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane container fade p-0" id="menu3">
+                            <table class="table" id="table-body">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th class="text-center">Qty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Milk</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yogurt</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Egg</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane container fade p-0" id="menu4">
+                            <table class="table" id="table-body">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th class="text-center">Qty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Chicken</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steak</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pork</td>
+                                        <td class="text-center">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

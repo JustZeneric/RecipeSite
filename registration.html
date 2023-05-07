@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,50 +13,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/767fb43fc0.js" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+
+
 
     <title>Document</title>
 </head>
 
 <body>
 
-    <section>
-        <div class="have-Account">
-            <h5>Already Have An Account?</h5>
-            <a href="login.html">Sign In</a>
+  <section>
+    <div class="have-Account">
+        <h5>Already Have An Account?</h5>
+        <a href="login.html">Sign In</a>
+    </div>
+    <div class="form-Container">
+        <div class="form-Border">
+        <div class="image-Container">
+          <center><img src="./assets/Avocado doing exercises.png"></center>
         </div>
-        <div class="form-Container">
-            <div class="form-Border">
-            <div class="image-Container">
-              <center><img src="./assets/Avocado doing exercises.png"></center>
-            </div>
-            <div class="header">
-              <h1>Getting Started</h1>
-              <p>Create An Account For A Complete Experience</p>
-            </div>
-            <form id="registration-form">
-                
-              <div class="username-Container">
-              <input type="text" id="username" name="username" placeholder="Username">
-            </div>
-            <div class="email-Container">
+        <div class="header">
+          <h1>Getting Started</h1>
+          <p>Create An Account For A Complete Experience</p>
+        </div>
+        <form action="registration.php" method="post" id="registration-form">
+            
+          <div class="username-Container">
+            <input type="text" id="username" name="username" placeholder="Username">
+          </div>
+          <div class="email-Container">
             <input type="email" id="email" name="email" placeholder="Email">
-            </div>
-              <div class="password-container">
-                <input type="password" id="password" placeholder="Password" >
-                <i class="fa-solid fa-eye" id="eye"></i>
-              </div>
-
-            </form>
+          </div>
+          <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <i class="fa-solid fa-eye" id="eye"></i>
+          </div>
           <div class="register">
-          <a href="#">Register</a>
+            <button id="register-Button" type="submit">Register</button>
           </div>
-          <div class="terms">
-            <h5>By signing up you are agreeing to our <span><a href="#">User Agreement</a></span> and <span><a href="#">Privacy Policy.</a></span></h5>
-          </div>
-          
-    </section>
+        </form>
+        <div class="terms">
+          <h5>By signing up you are agreeing to our <span><a href="#">User Agreement</a></span> and <span><a href="#">Privacy Policy.</a></span></h5>
+        </div>
+    </div>
+</section>
+
     <script src="registration.js"></script>
 </body>
 
