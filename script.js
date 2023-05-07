@@ -53,3 +53,54 @@ function validateCredentials(username, email, password) {
     return credentials.username === username && credentials.email === email && credentials.password === password;
   });
 }
+
+
+// Fridge Toggle Icons
+
+function ToggleIcon() {
+  const inputButtons = document.getElementsByClassName("btn-check");
+  const buttonIcons = document.getElementsByClassName("toggle-icon");
+
+  for (let i = 0; i < inputButtons.length; i++) {
+    if (inputButtons[i].checked) {
+      buttonIcons[i].className = "fa-regular fa-circle-check ms-2 toggle-icon";
+    } else {
+      buttonIcons[i].className = "fa-solid fa-plus ms-2 toggle-icon";
+    }
+  }
+}
+ToggleIcon();
+
+// Creating Table Data
+
+function addToTable() {
+  const checkboxes = document.querySelectorAll('.btn-check:checked');
+  const tableBody = document.querySelector('#tableBody tbody');
+  
+  checkboxes.forEach((checkbox) => {
+    const label = checkbox.nextElementSibling.textContent.trim();
+    const row = document.createElement('tr');
+    const cell1 = document.createElement('td');
+    const cell2 = document.createElement('td');
+    const input = document.createElement('input');
+    
+    cell1.textContent = label;
+    input.type = 'number';
+    input.min = '0';
+    input.max = '99';
+    input.className = "form-control";
+    input.style = "width: 80px"
+    cell2.appendChild(input);
+    cell2.className = "text-center d-flex justify-content-center w-100";
+    row.appendChild(cell1);
+    row.appendChild(cell2);
+    tableBody.appendChild(row);
+  });
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = false;
+    ToggleIcon(checkbox);
+  });
+}
+
+

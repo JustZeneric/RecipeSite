@@ -25,95 +25,103 @@
 </head>
 
 <body>
-    <nav class="p-3 ps-0 pe-0 w-100">
-        <div class="container-fluid">
-            <div class="container d-flex align-items-center justify-content-between">
-                <div class="container p-0">
-                    <h1 class="m-0 text-uppercase nav-title">P<span>P</span></h1>
-                </div>
-                <div class="container d-flex justify-content-end align-items-center p-0">
-                    <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <i class="fa-solid fa-bars fs-1 burger-menu"></i></button>
-
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                        aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header ms-3 mt-2 d-flex justify-content-end">
-
-                            <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <a href="#" class="text-decoration-none text-uppercase ms-3 text-light">About</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="#" class="text-decoration-none text-uppercase ms-3 text-light">Recipes</a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="login.html"
-                                        class="text-decoration-none text-uppercase btn btn-light ms-2">Login</a>
-                                </li>
-                                <li>
-                                    <p class="ms-3">Don't Have An Account ? <span><a href="registration.html"
-                                                class="text-light text">Sign Up</a></span></p>
-                                </li>
-                            </ul>
-                        </div>
+    
+    <section>
+        <nav class="p-3 ps-0 pe-0 w-100">
+            <div class="container-fluid">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div class="container p-0">
+                        <a href="/" class="text-decoration-none">
+                            <h1 class="m-0 text-uppercase nav-title">P<span>P</span></h1>
+                        </a>
                     </div>
-
-                    <ul
-                        class="d-flex list-unstyled align-items-center justify-content-center m-0 d-none d-md-flex nav-list">
-                        <li class="d-flex align-items-center justify-content-center">
-                            <a href="#" target="_blank" class="text-decoration-none text-uppercase nav-item">About</a>
-                        </li>
-                        <li class="d-flex align-items-center justify-content-center">
-                            <a href="#" target="_blank"
-                                class="text-decoration-none ms-3 text-uppercase nav-item">Recipes</a>
-                        </li>
-                        <li class="d-flex align-items-center justify-content-center" id="login-link">
-                            <a href="login.html" target="_blank"
-                                class="text-decoration-none ms-3 text-uppercase btn btn-light btn-login"
-                                id="login-btn">Login</a>
-
-
-                        </li>
-                        <div id="username-display"></div>
-                    </ul>
+                    <div class="container d-flex justify-content-end align-items-center p-0">
+                        <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars fs-1 burger-menu"></i></button>
+    
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header ms-3 mt-2 d-flex justify-content-end">
+    
+                                <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <a href="#" class="text-decoration-none text-uppercase ms-3 text-light">About</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="#" class="text-decoration-none text-uppercase ms-3 text-light">Recipes</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="login.html"
+                                            class="text-decoration-none text-uppercase btn btn-light ms-2">Login</a>
+                                    </li>
+                                    <li>
+                                        <p class="ms-3">Don't Have An Account ? <span><a href="registration.html"
+                                                    class="text-light text">Sign Up</a></span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <ul
+                            class="d-flex list-unstyled align-items-center justify-content-center m-0 d-none d-md-flex nav-list">
+                            <li class="d-flex align-items-center justify-content-center">
+                                <a href="#" target="_blank" class="text-decoration-none text-uppercase nav-item">About</a>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center">
+                                <a href="#" target="_blank"
+                                    class="text-decoration-none ms-3 text-uppercase nav-item">Recipes</a>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center" id="login-link">
+                                <a href="login.html" target="_blank"
+                                    class="text-decoration-none ms-3 text-uppercase btn btn-light btn-login"
+                                    id="login-btn">Login</a>
+    
+    
+                            </li>
+                            <div id="username-display"></div>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <section>
-        <div class="container-fluid d-flex justify-content-center h-100">
-            <div class="container p-5">
+        </nav>
+        <div class="container-fluid d-flex justify-content-center align-items-center h-100 flex-column">
+            <div class="container p-0 mb-3">
+                <h1 class="m-0 text-center text-uppercase">My Fridge</h1>
+            </div>
+            <div class="container">
                 <!-- Nav tabs -->
-                <div class="container p-3 table-container">
+                <div class="container p-4 table-container">
 
-                    
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#home">All</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu1">Carbs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu2">Veg</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu3">Dairy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#menu4">Meat</a>
-                        </li>
-                    </ul>
+                    <div class="container p-0">
+                        <ul class="nav nav-tabs" id="nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#home">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Carbs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Veg</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu3">Dairy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu4">Meat</a>
+                            </li>
+                        </ul>
+                    </div>
+
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div class="tab-pane container active p-0" id="home">
-                            <table class="table" id="table-body">
+                        <div class="tab-pane container active p-4" id="home" style="maxHeight: 420px; overflow-y: scroll">
+                            <table class="table" id="tableBody">
                                 <thead>
                                     <tr>
                                         <th>Item</th>
@@ -123,21 +131,94 @@
                                 <tbody>
                                     <tr>
                                         <td>Apple</td>
-                                        <td class="text-center">1</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Avocado</td>
-                                        <td class="text-center">1</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Tomato</td>
-                                        <td class="text-center">1</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="container p-0">
+                                <ul class="list-unstyled d-flex justify-content-center flex-wrap">
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-1"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-1">Flour
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-2"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-2">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-3"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-3">Basil
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-4"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-4">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-5"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-5">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-6"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-6">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-7"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-7">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-8"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-8">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="container d-flex justify-content-center p-0">
+                                    <button type="button" class="btn btn-success" id="add-row-btn" onclick="addToTable()">Add Ingredients + </button>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="tab-pane container fade p-0" id="menu1">
-                            <table class="table" id="table-body">
+                        <div class="tab-pane container p-4" id="menu1" style="maxHeight: 420px; overflow-y: scroll">
+                            <table class="table" id="tableBody">
                                 <thead>
                                     <tr>
                                         <th>Item</th>
@@ -146,22 +227,95 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Bread</td>
-                                        <td class="text-center">1</td>
+                                        <td>Apple</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>Flour</td>
-                                        <td class="text-center">1</td>
+                                        <td>Avocado</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>Pasta</td>
-                                        <td class="text-center">1</td>
+                                        <td>Tomato</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="container p-0">
+                                <ul class="list-unstyled d-flex justify-content-center flex-wrap">
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-1"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-1">Flour
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-2"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-2">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-3"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-3">Basil
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-4"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-4">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-5"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-5">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-6"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-6">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-7"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-7">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-8"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-8">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="container d-flex justify-content-center p-0">
+                                    <button type="button" class="btn btn-success" id="add-row-btn" onclick="addToTable()">Add Ingredients + </button>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="tab-pane container fade p-0" id="menu2">
-                            <table class="table" id="table-body">
+                        <div class="tab-pane container p-4" id="menu2" style="maxHeight: 420px; overflow-y: scroll">
+                            <table class="table" id="tableBody">
                                 <thead>
                                     <tr>
                                         <th>Item</th>
@@ -170,22 +324,95 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Broccoli</td>
-                                        <td class="text-center">1</td>
+                                        <td>Apple</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>Cauliflower</td>
-                                        <td class="text-center">1</td>
+                                        <td>Avocado</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>Butternut</td>
-                                        <td class="text-center">1</td>
+                                        <td>Tomato</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="container p-0">
+                                <ul class="list-unstyled d-flex justify-content-center flex-wrap">
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-1"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-1">Flour
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-2"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-2">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-3"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-3">Basil
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-4"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-4">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-5"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-5">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-6"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-6">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-7"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-7">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-8"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-8">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="container d-flex justify-content-center p-0">
+                                    <button type="button" class="btn btn-success" id="add-row-btn" onclick="addToTable()">Add Ingredients + </button>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="tab-pane container fade p-0" id="menu3">
-                            <table class="table" id="table-body">
+                        <div class="tab-pane container p-4" id="menu3" style="maxHeight: 420px; overflow-y: scroll">
+                            <table class="table" id="tableBody">
                                 <thead>
                                     <tr>
                                         <th>Item</th>
@@ -194,22 +421,95 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Milk</td>
-                                        <td class="text-center">1</td>
+                                        <td>Apple</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>Yogurt</td>
-                                        <td class="text-center">1</td>
+                                        <td>Avocado</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>Egg</td>
-                                        <td class="text-center">1</td>
+                                        <td>Tomato</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="container p-0">
+                                <ul class="list-unstyled d-flex justify-content-center flex-wrap">
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-1"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-1">Flour
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-2"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-2">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-3"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-3">Basil
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-4"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-4">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-5"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-5">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-6"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-6">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-7"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-7">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-8"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-8">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="container d-flex justify-content-center p-0">
+                                    <button type="button" class="btn btn-success" id="add-row-btn" onclick="addToTable()">Add Ingredients + </button>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="tab-pane container fade p-0" id="menu4">
-                            <table class="table" id="table-body">
+                        <div class="tab-pane container p-4" id="menu4" style="maxHeight: 420px; overflow-y: scroll">
+                            <table class="table" id="tableBody">
                                 <thead>
                                     <tr>
                                         <th>Item</th>
@@ -218,19 +518,92 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Chicken</td>
-                                        <td class="text-center">1</td>
+                                        <td>Apple</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>Steak</td>
-                                        <td class="text-center">1</td>
+                                        <td>Avocado</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>Pork</td>
-                                        <td class="text-center">1</td>
+                                        <td>Tomato</td>
+                                        <td class="text-center d-flex justify-content-center w-100">
+                                            <input type="number" class="form-control" min="0" max="99" required
+                                                style="width: 80px">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="container p-0">
+                                <ul class="list-unstyled d-flex justify-content-center flex-wrap">
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-1"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-1">Flour
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-2"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-2">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-3"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-3">Basil
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-4"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-4">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-5"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-5">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-6"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-6">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-7"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-7">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                    <li class="m-2">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined-8"
+                                            autocomplete="off" onclick="ToggleIcon()">
+                                        <label class="btn btn btn-outline-success" for="btn-check-outlined-8">Sugar
+                                            <i class="fa-solid fa-plus ms-2 toggle-icon"></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="container d-flex justify-content-center p-0">
+                                    <button type="button" class="btn btn-success" id="add-row-btn" onclick="addToTable()">Add Ingredients + </button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -238,6 +611,35 @@
 
         </div>
     </section>
+
+    <div class="container-fluid footer-container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-0 me-2 mb-md-0 text-light text-decoration-none m-0">
+                    P<span class="text-dark m-0">P</span>
+                </a>
+                <span class="mb-0 mb-md-0 text-light">&copy; 2023 PantryPal</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-light" href="#">
+                        <i class="fa-brands fa-twitter social-icon"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-light" href="#">
+                        <i class="fa-brands fa-instagram social-icon"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-light" href="#">
+                        <i class="fa-brands fa-facebook social-icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 
 
 
